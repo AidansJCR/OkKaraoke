@@ -40,6 +40,7 @@ namespace karaoke
                 app.UseHsts();
             }
 
+            app.UseStaticFiles(); // host static files through Kestrel.
             app.UseHttpsRedirection();
             app.UseMvc();
         }
